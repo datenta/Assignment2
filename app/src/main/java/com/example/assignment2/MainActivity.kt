@@ -142,5 +142,9 @@ fun MovieCard() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
+    Column(
 
+    ) {
+
+    }
 }
