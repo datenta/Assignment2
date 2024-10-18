@@ -9,8 +9,11 @@ import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.basicMarquee
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Scaffold
@@ -54,8 +57,8 @@ fun UniqueMovieCard() {
                 modifier = Modifier
                     .background(Color(0xFF3D3BFF))
                     .padding(4.dp,2.dp)
-                    .clip(RoundedCornerShape(4.dp))
                     .align(Alignment.TopEnd)
+                    .clip(shape = RoundedCornerShape(4.dp))
             ){
                 Text(text="7.8",
                     fontSize = 6.sp,
@@ -93,7 +96,9 @@ fun UniqueMovieCard() {
 }
 @Composable
 fun MovieCard() {
-    Column() {
+    Column(
+
+    ) {
         Box(
             modifier = Modifier.width(111.dp).height(156.dp)
         ){
@@ -145,6 +150,71 @@ fun GreetingPreview() {
     Column(
 
     ) {
-
+        Spacer(modifier = Modifier.height(55.dp))
+        Image(painter = painterResource(id= R.drawable.logo),
+            contentDescription = null)
+        Spacer(modifier = Modifier.height(46.88.dp))
+        LazyColumn() {
+            item {CardTitle("Премьеры")}
+            item {CardTitle("Популярные")}
+            item {CardTitle("Боевики США")}
+            item {CardTitle("Топ-250")}
+            item {CardTitle("Драмы Франция")}
+            item {CardTitle("Сериалы")}
+        }
+        Spacer(modifier = Modifier.height(36.12.dp))
+        Box(
+            modifier = Modifier
+                .background(Color.White)
+                .padding(91.65.dp,23.41.dp)
+                .clip(RoundedCornerShape(16.dp,16.dp))
+                .align(Alignment.CenterHorizontally)
+        ){
+            Row (
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ){
+                Image(painter = painterResource(id=R.drawable.home),
+                    contentDescription = null)
+                Image(painter = painterResource(id=R.drawable.search),
+                    contentDescription = null)
+                Image(painter = painterResource(id=R.drawable.profile),
+                    contentDescription = null)
+            }
+        }
     }
+}
+@Composable
+fun CardTitle(title:String){
+    Column (
+
+    ){
+        Row(
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ){
+            Text(text=title,
+                fontSize = 18.sp,
+                fontWeight = FontWeight.W600,
+                lineHeight = 19.8.sp,
+                color = Color(0xff272727),
+                modifier = Modifier.width(99.dp).height(20.dp)
+            )
+            Spacer(modifier = Modifier.width(185.dp))
+            Text(text="Все",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.W500,
+                lineHeight = 15.4.sp,
+                color = Color(0xff3d3bff),
+                modifier = Modifier.width(24.dp).height(15.dp)
+            )
+
+        }
+        LazyRow(
+
+        ) {
+            MovieCard();
+        }
+    }
+
 }
