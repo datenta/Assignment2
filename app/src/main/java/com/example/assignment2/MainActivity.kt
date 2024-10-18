@@ -166,13 +166,15 @@ fun GreetingPreview() {
         Box(
             modifier = Modifier
                 .background(Color.White)
-                .padding(91.65.dp,23.41.dp)
-                .clip(RoundedCornerShape(16.dp,16.dp))
+                .height(64.dp)
+                .clip(shape = RoundedCornerShape(16.dp,16.dp))
                 .align(Alignment.CenterHorizontally)
+                .fillMaxWidth()
         ){
             Row (
                 horizontalArrangement = Arrangement.SpaceBetween,
-                verticalAlignment = Alignment.CenterVertically
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.padding(88.dp,20.dp)
             ){
                 Image(painter = painterResource(id=R.drawable.home),
                     contentDescription = null)
@@ -191,14 +193,15 @@ fun CardTitle(title:String){
     ){
         Row(
             horizontalArrangement = Arrangement.SpaceBetween,
-            verticalAlignment = Alignment.CenterVertically
+            verticalAlignment = Alignment.CenterVertically,
+            modifier = Modifier.fillMaxWidth()
         ){
             Text(text=title,
                 fontSize = 18.sp,
                 fontWeight = FontWeight.W600,
                 lineHeight = 19.8.sp,
                 color = Color(0xff272727),
-                modifier = Modifier.width(99.dp).height(20.dp)
+                modifier = Modifier.width(99.dp).height(20.dp).padding(start = 26.dp)
             )
             Spacer(modifier = Modifier.width(185.dp))
             Text(text="Все",
@@ -206,15 +209,19 @@ fun CardTitle(title:String){
                 fontWeight = FontWeight.W500,
                 lineHeight = 15.4.sp,
                 color = Color(0xff3d3bff),
-                modifier = Modifier.width(24.dp).height(15.dp)
+                modifier = Modifier.width(24.dp).height(15.dp).padding(end = 26.dp)
             )
 
         }
+        Spacer(modifier = Modifier.height(24.dp))
         LazyRow(
-
+            horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            MovieCard();
+            items(10){
+                MovieCard()
+            }
         }
+        Spacer(modifier = Modifier.height(36.dp))
     }
 
 }
