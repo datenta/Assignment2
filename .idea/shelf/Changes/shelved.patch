@@ -1,0 +1,356 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1729289329810)
++++ b/.idea/misc.xml	(date 1729289329810)
+@@ -0,0 +1,9 @@
++<project version="4">
++  <component name="ExternalStorageConfigurationManager" enabled="true" />
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/build/classes" />
++  </component>
++  <component name="ProjectType">
++    <option name="id" value="Android" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/compiler.xml b/.idea/compiler.xml
+new file mode 100644
+--- /dev/null	(date 1729283181943)
++++ b/.idea/compiler.xml	(date 1729283181943)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel target="17" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/deploymentTargetSelector.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/deploymentTargetSelector.xml b/.idea/deploymentTargetSelector.xml
+new file mode 100644
+--- /dev/null	(date 1729302828610)
++++ b/.idea/deploymentTargetSelector.xml	(date 1729302828610)
+@@ -0,0 +1,21 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="deploymentTargetSelector">
++    <selectionStates>
++      <SelectionState runConfigName="app">
++        <option name="selectionMode" value="DROPDOWN" />
++      </SelectionState>
++      <SelectionState runConfigName="MainActivity">
++        <option name="selectionMode" value="DROPDOWN" />
++        <DropdownSelection timestamp="2024-10-19T01:32:21.075100Z">
++          <Target type="DEFAULT_BOOT">
++            <template>
++              <DeviceId pluginId="FirebaseDirectAccess" type="TEMPLATE" identifier="model_id=shiba/34" />
++            </template>
++          </Target>
++        </DropdownSelection>
++        <DialogSelection />
++      </SelectionState>
++    </selectionStates>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.name b/.idea/.name
+new file mode 100644
+--- /dev/null	(date 1729289409474)
++++ b/.idea/.name	(date 1729289409474)
+@@ -0,0 +1,1 @@
++assignment2
+\ No newline at end of file
+Index: .idea/kotlinc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/kotlinc.xml b/.idea/kotlinc.xml
+new file mode 100644
+--- /dev/null	(date 1729283182000)
++++ b/.idea/kotlinc.xml	(date 1729283182000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="KotlinJpsPluginSettings">
++    <option name="version" value="1.9.0" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/migrations.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/migrations.xml b/.idea/migrations.xml
+new file mode 100644
+--- /dev/null	(date 1729283182015)
++++ b/.idea/migrations.xml	(date 1729283182015)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectMigrations">
++    <option name="MigrateToGradleLocalJavaHome">
++      <set>
++        <option value="$PROJECT_DIR$" />
++      </set>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1729283181927)
++++ b/.idea/.gitignore	(date 1729283181927)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: .idea/appInsightsSettings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/appInsightsSettings.xml b/.idea/appInsightsSettings.xml
+new file mode 100644
+--- /dev/null	(date 1729290421077)
++++ b/.idea/appInsightsSettings.xml	(date 1729290421077)
+@@ -0,0 +1,26 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="AppInsightsSettings">
++    <option name="tabSettings">
++      <map>
++        <entry key="Firebase Crashlytics">
++          <value>
++            <InsightsFilterSettings>
++              <option name="connection">
++                <ConnectionSetting>
++                  <option name="appId" value="PLACEHOLDER" />
++                  <option name="mobileSdkAppId" value="" />
++                  <option name="projectId" value="" />
++                  <option name="projectNumber" value="" />
++                </ConnectionSetting>
++              </option>
++              <option name="signal" value="SIGNAL_UNSPECIFIED" />
++              <option name="timeIntervalDays" value="THIRTY_DAYS" />
++              <option name="visibilityType" value="ALL" />
++            </InsightsFilterSettings>
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1729289798683)
++++ b/.idea/vcs.xml	(date 1729289798683)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/gradle.xml b/.idea/gradle.xml
+new file mode 100644
+--- /dev/null	(date 1729289393551)
++++ b/.idea/gradle.xml	(date 1729289393551)
+@@ -0,0 +1,19 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="GradleMigrationSettings" migrationVersion="1" />
++  <component name="GradleSettings">
++    <option name="linkedExternalProjectsSettings">
++      <GradleProjectSettings>
++        <option name="externalProjectPath" value="$PROJECT_DIR$" />
++        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
++        <option name="modules">
++          <set>
++            <option value="$PROJECT_DIR$" />
++            <option value="$PROJECT_DIR$/app" />
++          </set>
++        </option>
++        <option name="resolveExternalAnnotations" value="false" />
++      </GradleProjectSettings>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: app/src/main/java/com/example/assignment2/BottomNav/BottemNavigation.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/assignment2/BottomNav/BottemNavigation.kt b/app/src/main/java/com/example/assignment2/BottomNav/BottemNavigation.kt
+new file mode 100644
+--- /dev/null	(date 1729301370575)
++++ b/app/src/main/java/com/example/assignment2/BottomNav/BottemNavigation.kt	(date 1729301370575)
+@@ -0,0 +1,110 @@
++package com.example.assignment2.BottomNav
++
++
++import android.annotation.SuppressLint
++import androidx.compose.foundation.layout.Box
++import androidx.compose.foundation.layout.fillMaxSize
++import androidx.compose.foundation.layout.wrapContentHeight
++import androidx.compose.foundation.layout.wrapContentSize
++import androidx.compose.runtime.Composable
++import androidx.compose.runtime.getValue
++import androidx.compose.ui.graphics.Color
++import androidx.navigation.NavController
++import androidx.navigation.compose.currentBackStackEntryAsState
++import androidx.compose.material.*
++import androidx.compose.material3.Icon
++import androidx.compose.material3.Scaffold
++import androidx.compose.material3.Text
++import androidx.compose.ui.res.painterResource
++import androidx.navigation.NavHostController
++import androidx.navigation.compose.NavHost
++import androidx.navigation.compose.composable
++import androidx.navigation.compose.rememberNavController
++
++
++
++
++import androidx.compose.material3.NavigationBar
++import androidx.compose.material3.NavigationBarItem
++import androidx.compose.ui.Modifier
++import androidx.compose.ui.input.pointer.motionEventSpy
++import androidx.compose.ui.text.style.TextAlign
++
++
++@Composable
++fun BottomNavBar(navController: NavController) {
++    val items = listOf(
++        Bottomitem.Screen1,
++        Bottomitem.Screen2,
++        Bottomitem.Screen3
++    )
++
++    NavigationBar(
++        containerColor = Color.White,
++        contentColor = Color.Black
++    ) {
++        val currentRoute = currentRoute(navController)
++        items.forEach { item ->
++            NavigationBarItem(
++                icon = {
++                    Icon(painterResource(id = item.iconId), contentDescription = item.title)
++                },
++
++                label = { Text(item.title) },
++                selected = currentRoute == item.route,
++                onClick = {
++                    navController.navigate(item.route) {
++                        popUpTo(navController.graph.startDestinationId) {
++                            saveState = true
++                        }
++                        launchSingleTop = true
++                        restoreState = true
++                    }
++                },
++                alwaysShowLabel = true
++            )
++        }
++    }
++}
++
++@Composable
++fun currentRoute(navController: NavController): String? {
++    val navBackStackEntry by navController.currentBackStackEntryAsState()
++    return navBackStackEntry?.destination?.route
++}
++
++@Composable
++fun NavigationGraph(navController: NavHostController) {
++    NavHost(navController, startDestination = Bottomitem.Screen1.route) {
++        composable(Bottomitem.Screen1.route) { HomeScreen() }
++        composable(Bottomitem.Screen2.route) { SearchScreen() }
++        composable(Bottomitem.Screen3.route) { ProfileScreen() }
++    }
++}
++
++
++
++@Composable
++fun HomeScreen() {
++
++    Text("Home Screen")
++}
++
++@Composable
++fun SearchScreen() {
++
++    Text("Search Screen")
++}
++
++@Composable
++fun ProfileScreen() {
++
++    Text(modifier = Modifier.fillMaxSize().wrapContentHeight(),
++
++        text = "Profile Screen",
++        textAlign = TextAlign.Center)
++}
++
++
++
++
+Index: app/src/main/java/com/example/assignment2/BottomNav/BottemItem.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/assignment2/BottomNav/BottemItem.kt b/app/src/main/java/com/example/assignment2/BottomNav/BottemItem.kt
+new file mode 100644
+--- /dev/null	(date 1729291423075)
++++ b/app/src/main/java/com/example/assignment2/BottomNav/BottemItem.kt	(date 1729291423075)
+@@ -0,0 +1,9 @@
++package com.example.assignment2.BottomNav
++
++import com.example.assignment2.R
++
++sealed class Bottomitem (val title: String, val iconId: Int, val route: String){
++    object Screen1: Bottomitem("Home", R.drawable.home, "home_1")
++    object Screen2: Bottomitem("Search", R.drawable.search, "search_1")
++    object Screen3: Bottomitem("Profile", R.drawable.profile, "profile_1")
++}
+\ No newline at end of file
