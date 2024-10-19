@@ -51,6 +51,7 @@ sealed class Screen(val route: String, val icon: Int){
 
 
 @Composable
+
 fun MyScrean () {
     val navController = rememberNavController()
 
